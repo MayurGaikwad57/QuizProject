@@ -1,0 +1,53 @@
+body{
+    height: 80vh;
+    background: linear-gradient(to right, rgba(235, 156, 227, 0), rgb(106, 155, 234));
+
+}
+.container{
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.container h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.btn{
+    width:60px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(11, 233, 11);
+}
+
+.quizQuestions {
+    font-size: 28px;
+    margin-top: 10px;
+}
+.choice{
+    font-size: 22px;
+    margin:5px auto;
+    border: 2px solid rgb(26, 24, 24);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align : left;
+    width:60%;
+    padding: 8px;
+    cursor: pointer;
+}
+.choice:hover{
+    background-color: rgb(209, 205, 205);
+}
+
+.selected{
+    background-color: rgb(135, 135, 241);
+    color: #fff;
+}
+.container .scoreCard{
+    font-size: 20px;
+}
