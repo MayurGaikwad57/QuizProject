@@ -1,7 +1,8 @@
 body{
     height: 80vh;
     background: linear-gradient(to right, rgba(235, 156, 227, 0), rgb(106, 155, 234));
-
+    display: grid;
+    place-items: center;
 }
 .container{
     /* border: 2px solid black; */
@@ -9,6 +10,7 @@ body{
     width: 80%;
     text-align: center;
     margin-top: 100px;
+    display: none;
 
 }
 .container h1{
@@ -17,11 +19,12 @@ body{
     text-decoration: underline;
     text-underline-offset: 8px;
 }
-.btn{
-    width:60px;
+.nextBtn{
+    width:max-content;
     cursor: pointer;
+    /* padding:5px 10px; */
 }
-.btn:hover{
+.nextBtn:hover{
     background-color: rgb(11, 233, 11);
 }
 
@@ -48,6 +51,47 @@ body{
     background-color: rgb(135, 135, 241);
     color: #fff;
 }
+.selected:hover{
+    color: black;
+}
 .container .scoreCard{
     font-size: 20px;
+}
+.alert{
+   display:none;
+   width:100%;
+   position: top;
+   padding: 10px;
+   margin-top : 0px;
+   background-color: rgb(174, 243, 174);
+}
+.startBtn{
+    background-color: green;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    width:max-content;
+    color:#fff;
+    padding: 20px 20px;
+}
+.startBtn:hover{
+    background-color: rgb(62, 125, 3);
+    transition: 0.3s all ease;
+    color:#fff;
+}
+.timer{
+    background-color: rgb(104, 43, 237);
+    border:2px solid red;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    height:72px;
+    color: #fff;
+    width:72px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.timer:hover{
+    background-color: rgb(223, 219, 119);
 }
